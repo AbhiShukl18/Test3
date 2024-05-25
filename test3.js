@@ -66,36 +66,3 @@
 
 
 
-var array=[1, 2, 3, 4, 5, 6];  
-target=3;
-
-function binarySearch(array, target){
-
-    var leftindex=0;  
-    var rightindex=array.length-1; 
-    
-    while(leftindex<=rightindex){  
-
-        var midindex=Math.floor((leftindex+rightindex)/2); 
-        // console.log(midindex); 
-        // rightindex=-1
-
-        if(array[midindex]===target){ 
-            return midindex;  
-        }
-        else if(array[midindex] < target){ 
-            left= midindex+1;               
-            console.log(array[midindex]); 
-            
-        }
-        else if(array[midindex] > target){ 
-            right=midindex-1                    
-            console.log(array[midindex]);
-            
-
-        }
-       
-    }
-}
-
-binarySearch(array, target)
